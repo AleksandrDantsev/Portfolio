@@ -1,0 +1,107 @@
+.document {
+    width: 65%;
+    margin: 60px auto;
+    padding: 50px 100px;
+    background-color: #fff;
+}
+.backgroundDocument {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    background-size: 100% 100% cover;
+    background-image: url('/backgroundDoc.webp');
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    h1 {
+        font-size: 22px;
+    }
+}
+.birth {
+    display: flex;
+    margin-top: 20px;
+    p {
+        margin-left: 15px;
+    }
+}
+.infoContSpan {
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.contactInfo {
+    margin: 20px 0;
+    margin-bottom: 0;
+    h2 {
+        margin-bottom: 10px;
+    }
+    li {
+        padding: 2px 0;
+    }
+}
+.infoBlock {
+    padding-top: 15px;
+}
+.aboutMe {
+    font-size: 20px;
+}
+.experienseList {
+    li {
+        margin: 25px 0;
+    }
+}
+
+.linkToProject {
+    display: block;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+.characteristic {
+    h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.downloadDocument {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 1px 5px 1px #c4c4c4;
+    border-radius: 12px;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(0.95);
+        box-shadow: 0 3px 15px 1px #bebebe;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .document {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .document {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .document {
+        width: 100%;
+        padding: 0 auto;
+    }
+    .linkToProject,
+    .contactInfo li {
+        word-wrap: break-word;
+    }
+}

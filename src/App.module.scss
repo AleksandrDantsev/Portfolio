@@ -1,0 +1,20 @@
+.switchMode {
+    font-size: 14px;
+    position: fixed;
+    width: 50px;
+    z-index: 55;
+    top: 0;
+    left: 5px;
+    background-color: #8f1919;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 8px 0 rgb(122, 110, 110);
+    &:active {
+        background-color: #662626;
+    }
+}
+
+.green {
+    background-color: #3b922a;
+}

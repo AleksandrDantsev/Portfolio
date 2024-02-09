@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    width: 85%;
+    margin: 40px auto;
+    padding: 20px 25px;
+    background-color: #fff;
+}
+.interactive {
+    min-height: 100vh;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background-image: url('/backgroundInt.webp');
+    background-size: 100% 100% contain;
+    background-position: 0 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        width: 95%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        width: 100%;
+    }
+}
